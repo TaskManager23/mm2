@@ -1,0 +1,41 @@
+local Player = game:GetService("Workspace")["coolboiog"]
+local PlayerName = "coolboiog"
+local KnifeMesh = "rbxassetid://305826272"
+local KnifeTexture = "rbxassetid://2599774828"
+local KnifeLogoId = "http://www.roblox.com/asset/?id=7063358747"
+
+local GunMesh = "rbxassetid://6125828567"
+local GunTexture = "rbxassetid://6120563948"
+local GunLogoId = "http://www.roblox.com/asset/?id=7177398867"
+
+Player.KnifeDisplay.Mesh.MeshId = KnifeMesh
+Player.KnifeDisplay.Mesh.TextureId = KnifeTexture
+
+Player.KnifeDisplay.Mesh.Scale = Vector3.new(0.9, 0.9, 0.9)
+
+Player.GunDisplay.Mesh.MeshId = GunMesh
+Player.GunDisplay.Mesh.TextureId = GunTexture
+
+Player.GunDisplay.Mesh.Scale = Vector3.new(1, 1, 1)
+
+if game:GetService("Players")[PlayerName].Backpack:FindFirstChild("Knife") then
+
+game:GetService("Players")[PlayerName].Backpack.Knife.Handle.Mesh.MeshId = KnifeMesh
+game:GetService("Players")[PlayerName].Backpack.Knife.Handle.Mesh.TextureId = KnifeTexture
+game:GetService("Players")[PlayerName].Backpack.Knife.TextureId = KnifeLogoId
+
+game:GetService("Players")[PlayerName].Backpack.Knife.Handle.Mesh.Scale = Vector3.new(0.9, 0.9, 0.9)
+
+game:GetService("Players")[PlayerName].Backpack.Knife.Handle.Mesh.Offset = Vector3.new(0, 0, -0.38)
+end
+
+if game:GetService("Players")[PlayerName].Backpack:FindFirstChild("Gun") then
+
+game:GetService("Players")[PlayerName].Backpack.Gun.Handle.Mesh.MeshId = GunMesh
+game:GetService("Players")[PlayerName].Backpack.Gun.Handle.Mesh.TextureId = GunTexture
+game:GetService("Players")[PlayerName].Backpack.Gun.TextureId = GunLogoId
+
+game:GetService("Players")[PlayerName].Backpack.Gun.Handle.Mesh.Scale = Vector3.new(1, 1, 1)
+end
+end
+end)
