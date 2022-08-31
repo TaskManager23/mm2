@@ -37,5 +37,3 @@ game:GetService("Players")[PlayerName].Backpack.Gun.TextureId = GunLogoId
 
 game:GetService("Players")[PlayerName].Backpack.Gun.Handle.Mesh.Scale = Vector3.new(1, 1, 1)
 end
-end
-end)
